@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% for comment in comment_list %}
+
+      {{comment.project_name}}<br>
+      {{comment.person_name}}<br>
+      {{comment.comment|linebreaks}}<br>
+
+      <img width="400" src="{{comment.picture.url}}" alt="">
+
+      <br>
+      <a href="{% url 'comment:comment_delete' comment.pk %}">Delete?</a><br>
+<br><br>
+    {% endfor %}
+  </body>
+</html>

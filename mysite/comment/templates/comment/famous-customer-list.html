@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% for famous_customer in famous_customer_list %}
+
+      <img width="400" src="{{famous_customer.picture.url}}" alt="">
+{{famous_customer.description}}
+      <br>
+      <a href="{% url 'comment:famous_customer_delete' famous_customer.pk %}">Delete?</a><br>
+<br><br>
+    {% endfor %}
+  </body>
+</html>

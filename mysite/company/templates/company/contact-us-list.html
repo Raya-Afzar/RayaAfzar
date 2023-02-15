@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% for contact_us in contact_us_list %}
+    {{contact_us.name}}
+    {{contact_us.request}}
+<br>
+<a href="{% url 'company:contact_us_delete' contact_us.pk %}">Delete?</a>
+<br>
+    {% endfor %}
+
+  </body>
+</html>

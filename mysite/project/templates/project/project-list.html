@@ -1,0 +1,131 @@
+{% extends "base_templates/_base1.html" %}
+{% block head_block %}
+<meta name=”robots” content=”noindex,nofollow”>
+
+<title>
+تماس با ما | شرکت برنامه نویسی و طراحی سایت
+</title>
+{% endblock %}
+
+{% block body_block %}
+
+<div style="padding: 4%;  " >
+
+  <h1 class="font-5 fYekan-bold gray-text-darken-4">
+برخی پروژه های انجام شده
+</h1>
+
+{% for project in project_list %}
+  <div style="max-width:1800px; margin:auto;" class="border-radius-2 shadow-3 uk-card uk-card uk-card-body gray-lighten-4 fYekan">
+    <div  class=" uk-grid-medium uk-text-right " uk-grid>
+      <div  class="uk-grid-medium uk-text-right uk-width-1-1 uk-width-2-5@m">
+        <h2 class="fYekan-bold gold-text  font-5">{{project.name}}</h2><br>
+        <div class="fYekan gray-text-darken-3 font-4">
+          کارفرما:
+           {{project.client}}
+
+        </div>
+        <div class="fYekan gray-text-darken-3 font-4">
+          سال تولید:
+           {{project.production_date}}
+
+        </div>
+        <div class="fYekan gray-text-darken-3 font-3">
+
+           {{project.description}}
+
+        </div>
+      </div>
+      <div  class="uk-grid-medium uk-text-center uk-width-1-1 uk-width-3-5@m">
+
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true;autoplay:true; autoplay-interval:5300;velocity:0.3;">
+
+            <ul class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-top: true; offset-bottom: 30">
+              {% if project.picture_1 %}
+                <li class="uk-width-3-4">
+                    <div class="uk-cover-container">
+                        <img src="{{project.picture_1.url}}" alt="" uk-cover>
+
+                    </div>
+                </li>
+                {% endif %}
+                {% if project.picture_2 %}
+                  <li class="uk-width-3-4">
+                      <div class="uk-cover-container">
+                          <img src="{{project.picture_2.url}}" alt="" uk-cover>
+
+                      </div>
+                  </li>
+                  {% endif %}
+                  {% if project.picture_3 %}
+                    <li class="uk-width-3-4">
+                        <div class="uk-cover-container">
+                            <img src="{{project.picture_3.url}}" alt="" uk-cover>
+
+                        </div>
+                    </li>
+                    {% endif %}
+                    {% if project.picture_4 %}
+                      <li class="uk-width-3-4">
+                          <div class="uk-cover-container">
+                              <img src="{{project.picture_4.url}}" alt="" uk-cover>
+
+                          </div>
+                      </li>
+                      {% endif %}
+                      {% if project.picture_5 %}
+                        <li class="uk-width-3-4">
+                            <div class="uk-cover-container">
+                                <img src="{{project.picture_5.url}}" alt="" uk-cover>
+
+                            </div>
+                        </li>
+                        {% endif %}
+                        {% if project.picture_6 %}
+                          <li class="uk-width-3-4">
+                              <div class="uk-cover-container">
+                                  <img src="{{project.picture_6.url}}" alt="" uk-cover>
+
+                              </div>
+                          </li>
+                          {% endif %}
+                          {% if project.picture_7 %}
+                            <li class="uk-width-3-4">
+                                <div class="uk-cover-container">
+                                    <img src="{{project.picture_7.url}}" alt="" uk-cover>
+
+                                </div>
+                            </li>
+                            {% endif %}
+                            {% if project.picture_8 %}
+                              <li class="uk-width-3-4">
+                                  <div class="uk-cover-container">
+                                      <img src="{{project.picture_8.url}}" alt="" uk-cover>
+
+                                  </div>
+                              </li>
+                              {% endif %}
+                              {% if project.picture_9 %}
+                                <li class="uk-width-3-4">
+                                    <div class="uk-cover-container">
+                                        <img src="{{project.picture_9.url}}" alt="" uk-cover>
+
+                                    </div>
+                                </li>
+                                {% endif %}
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover"  href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+        </div>
+
+
+      </div>
+</div>
+</div>
+<br><br>
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+    {% for order in order_list %}
+
+
+    {{order.name}}
+    <br>
+    <a href="{% url 'order:order_delete' order.pk %}">Delete Order</a>
+    <br>
+    /////////////////
+
+    <br>
+
+    {% endfor %}
+
+  </body>
+</html>

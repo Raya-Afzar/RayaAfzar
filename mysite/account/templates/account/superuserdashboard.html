@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    welcome {{user.username}}<br>
+    <a href="{% url 'logout' %}">logout </a><br>
+    <a href="{% url 'project:create' %}">create project</a><br>
+    <a href="{% url 'comment:comment_create' %}">Create Comment</a> -- <a href="{% url 'comment:comment_list' %}">Comment List</a><br>
+    <a href="{% url 'comment:famous_customer_create' %}">Create Famous Customer</a> -- <a href="{% url 'comment:famous_customer_list' %}">Famous Customer List</a><br>
+<a href="{% url 'company:contact_us_list' %}">contact us list</a><br>
+<a href="{% url 'order:unchecked_order_list' %}">unchecked-order-listorder list</a><br>
+<a href="{% url 'order:checked_order_list' %}">checked-order list</a><br>
+
+  </body>
+</html>

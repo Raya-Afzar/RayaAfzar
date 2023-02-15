@@ -1,0 +1,187 @@
+{% extends "base_templates/_base1.html" %}
+{% block head_block %}
+<meta name=”robots” content=”noindex,nofollow”>
+
+<title>
+ثبت پروژه | شرکت برنامه نویسی و طراحی سایت
+</title>
+
+<style media="screen">
+
+.card-input-element {
+  display: none;
+}
+
+.card-input {
+background-color: #CDAD63;
+padding:10px;
+box-shadow: 0 1px 3px hsla(0, 0%, 0.0000%, 0.2000), 0 1px 2px hsla(0, 0%, 0.0000%, 0.4000);
+}
+
+.card-input:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px hsla(0, 0%, 0.0000%, 0.2300), 0 3px 6px hsla(0, 0%, 0.0000%, 0.1600);
+}
+
+.card-input-element:checked + .card-input {
+  background-color: #c1993d;
+   box-shadow: 0 10px 20px hsla(0, 0%, 0.0000%, 0.2300), 0 3px 6px hsla(0, 0%, 0.0000%, 0.1600);
+}
+
+
+</style>
+{% endblock %}
+
+{% block body_block %}
+
+<div style="padding: 3%;">
+
+  <h1 class="font-5 fYekan-bold gray-text-darken-3">
+ثبت پروژه
+</h1>
+
+
+  <div style="max-width:1800px; margin:auto;" class="border-radius-2 shadow-3 uk-card uk-card uk-card-body gray-lighten-3 fYekan">
+
+<form method="POST">
+  {% csrf_token %}
+  <div  class=" uk-grid-medium uk-text-center " uk-grid>
+    <div  class="uk-grid-match uk-grid-medium uk-text-center uk-width-1-1 uk-width-1-2@m" uk-grid>
+{{form.Hfield}}
+
+
+
+   <div class="uk-width-1-1 uk-width-1-1@s">
+     <label class="uk-form-label uk-text-right border-bottom form-3 gray-text-darken-4" >موضوع پروژه</label>
+{{form.title}}
+   </div>
+
+   <div class="uk-width-1-1 uk-width-1-1@s">
+     <label class="uk-form-label uk-text-right border-bottom form-3 gray-text-darken-4"  >شماره تماس</label>
+   {{form.phone_number}}
+   </div>
+
+   <div class="uk-width-1-1 uk-width-1-1@s ">
+     <label class="uk-form-label uk-text-right border-bottom form-3 gray-text-darken-4" >نام و نام خانوادگی</label>
+   {{form.name}}
+   </div>
+
+
+   <br>
+   {% if form.errors %}
+   <div class=" whiteC-text"><p>
+   خطایی رخ داد.
+   لطفا فیلد هارا دوباره با دقت پر کنید.<br>
+   در صورت تداوم خطا مشکل را به پشتیبانان سایت اطلاع دهید.<br>
+<a href="#modal-example" uk-toggle>بیشتر</a>
+   </p>
+   <div style="z-index:10000;" id="modal-example" uk-modal>
+ <div class="uk-modal-dialog uk-modal-body">
+     <h2 class="uk-modal-title fYekan blue-text">خطا ناشی از مسائل زیر میباشد</h2>
+     <p >{{form.errors}}</p>
+     <p class="uk-text-right">
+         <button class="uk-button uk-button-default uk-modal-close fYekan" type="button">بستن</button>
+     </p>
+ </div>
+</div>
+</div>
+   {% endif %}
+
+
+ </div>
+ <div  class="uk-grid-match uk-grid-small uk-text-center uk-width-1-1 uk-width-1-2@m" uk-grid>
+
+
+   <div class="uk-width-1">
+     <label class="uk-form-label uk-text-right border-bottom form-3 gray-text-darken-4" >توضیحات دیگر</label>
+   {{form.description}}
+   </div>
+
+
+ </div>
+
+ <p style="margin-bottom:-18px;" class="font-2 fYekan uk-width-1-1 gray-text-darken-4 uk-text-right">
+   نوع پروژه ی خود را انتخاب کنید
+ </p>
+
+<div class="uk-width-1-1 uk-width-1-3@m uk-width-1-2@s uk-card gray-text-darken-3 uk-grid-match">
+
+        <label>
+          <input type="radio" name="product" class="card-input-element " />
+
+            <div class="panel panel-default card-input">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+              </svg>
+                        <br><br>
+              <div class="panel-heading fYekan-bold">برنامه نویسی و طراحی سایت
+
+
+              </div>
+              <div class="panel-body">
+برنامه نویسی اختصاصی سایت های مختلف شرکتی, فروشگاهی, تبلیغاتی و ...
+              </div>
+            </div>
+
+        </label>
+
+      </div>
+      <div class="uk-width-1-1 uk-width-1-3@m uk-width-1-2@s uk-card gray-text-darken-3 uk-grid-match">
+
+        <label>
+          <input type="radio" name="product" class="card-input-element" />
+
+            <div class="panel panel-default card-input">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-postcard gray-text-darken-4" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z"/>
+              </svg>
+                        <br><br>
+                        <div class="panel-heading fYekan-bold">برنامه نویسی کامپیوتر
+
+
+                        </div>
+                        <div class="panel-body">
+          طراحی نرم افزار های اجرا شونده در سیستم عامل های مختلف با رابط کاربری گرافیکی و...
+                        </div>
+            </div>
+        </label>
+
+      </div>
+<div class="uk-width-1-1 uk-width-1-3@m uk-width-1-2@s uk-card gray-text-darken-3 uk-grid-match">
+
+        <label>
+          <input type="radio" name="product" class="card-input-element" />
+
+            <div class="panel panel-default card-input">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-terminal " viewBox="0 0 16 16">
+                <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
+                <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"/>
+              </svg>
+              <br><br>
+              <div class="panel-heading fYekan-bold">دیگر خدمات
+
+
+              </div>
+              <div class="panel-body">
+پروژه هایی مانند طراحی های گرافیکی OpenGL یا طراحی افزونه ها یا برنامه های اجرا شونده در ترمینال ها و ...
+              </div>
+            </div>
+        </label>
+
+
+      </div>
+</div>
+<div class="uk-align-center uk-text-center">
+
+
+ <button style="padding-right:50px; padding-left:45px;" class="uk-inline uk-button gold uk-align-center uk-text-center gray-text-darken-4 shadow-1 border-radius-2 fYekan-bold" type="submit">
+ثبت پروژه
+
+</button>
+</div>
+  </div>
+ </form>
+</div>
+
+{% endblock %}
