@@ -1,5 +1,0 @@
-    <link type="text/css" rel="stylesheet" href="{% static 'docslider/docSlider.css' %}"/>
-    <script src="{% static 'docslider/docSlider.min.js' %}">
-
-</script>
-<script>docSlider.init();</script>
