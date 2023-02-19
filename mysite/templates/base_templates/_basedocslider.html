@@ -45,6 +45,7 @@
     overflow: auto;
     background: linear-gradient(rgba(193,153,61,1) 0%, rgba(255,255,255,1) 100%);
     animation: gradient 10s ease infinite;
+    -webkit-animation: gradient 10s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
 }
@@ -54,6 +55,7 @@
     overflow: auto;
     background: linear-gradient(rgba(75,75,75,1) 0%, rgba(0,0,0,1) 100%);
     animation: gradient 10s ease infinite;
+    -webkit-animation: gradient 10s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
 }
@@ -67,6 +69,18 @@
     }
     100% {
         background-position: 0% 0%;
+    }
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        -webkit-background-position: 0% 0%;
+    }
+    50% {
+        -webkit-background-position: 100% 100%;
+    }
+    100% {
+        -webkit-background-position: 0% 0%;
     }
 }
 
