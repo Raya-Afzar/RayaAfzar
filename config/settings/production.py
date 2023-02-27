@@ -11,6 +11,9 @@ ALLOWED_HOSTS = ['*',]
 
 ALLOWED_HOSTS = [config['ALLOWED_HOST1'],config['ALLOWED_HOST2'],config['ALLOWED_HOST3']
                     ,config['ALLOWED_HOST4'],config['ALLOWED_HOST5']]
+                    
+
+INSTALLED_APPS = INSTALLED_APPS + ['dbbackup',]                    
 
 
 DATABASES = {
@@ -35,5 +38,5 @@ SECURE_HSTS_SECONDS = 259200
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
 
-SESSION_COOKIE_SECURE = True
+#SESSION_COOKIE_SECURE = True
 

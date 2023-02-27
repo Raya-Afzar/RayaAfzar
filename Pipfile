@@ -8,6 +8,7 @@ django = {extras = ["argon2"], version = "*"}
 psycopg2-binary = "==2.8.5"
 argon2 = "*"
 pillow = "*"
+dbbackup = "*"
 
 [dev-packages]
 

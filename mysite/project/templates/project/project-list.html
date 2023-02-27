@@ -25,12 +25,13 @@
            {{project.client}}
 
         </div>
-        <div class="fYekan gray-text-darken-3 font-4">
+        <div  class="fYekan gray-text-darken-3 font-4">
           سال تولید:
-           {{project.production_date}}
+
+           {{project.production_date|date:"Y/m/d"}}
 
         </div>
-        <div class="fYekan gray-text-darken-3 font-3">
+        <div class="fYekan gray-text-darken-3 font-3 uk-text-justify">
 
            {{project.description}}
 
@@ -39,87 +40,61 @@
       <div  class="uk-grid-medium uk-text-center uk-width-1-1 uk-width-3-5@m">
 
 
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true;autoplay:true; autoplay-interval:5300;velocity:0.3;">
+        <div style="padding-right:10%;" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay:true;autoplay-interval:4000; animation: scale">
 
-            <ul class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-top: true; offset-bottom: 30">
+            <ul class="uk-slideshow-items">
               {% if project.picture_1 %}
-                <li class="uk-width-3-4">
-                    <div class="uk-cover-container">
-                        <img src="{{project.picture_1.url}}" alt="" uk-cover>
-
-                    </div>
+                <li  >
+                    <img style="max-height:100%; width:100%; object-fit:contain;" src="{{project.picture_1.url}}" alt="" uk-cover>
                 </li>
                 {% endif %}
                 {% if project.picture_2 %}
-                  <li class="uk-width-3-4">
-                      <div class="uk-cover-container">
-                          <img src="{{project.picture_2.url}}" alt="" uk-cover>
-
-                      </div>
+                  <li  >
+                      <img style="max-height:100%; width:100%; object-fit:contain;" src="{{project.picture_2.url}}" alt="" uk-cover>
                   </li>
                   {% endif %}
                   {% if project.picture_3 %}
-                    <li class="uk-width-3-4">
-                        <div class="uk-cover-container">
-                            <img src="{{project.picture_3.url}}" alt="" uk-cover>
-
-                        </div>
+                    <li  >
+                        <img style="max-height:100%; width:100%; object-fit:contain;" src="{{project.picture_3.url}}" alt="" uk-cover>
                     </li>
                     {% endif %}
                     {% if project.picture_4 %}
-                      <li class="uk-width-3-4">
-                          <div class="uk-cover-container">
-                              <img src="{{project.picture_4.url}}" alt="" uk-cover>
-
-                          </div>
+                      <li>
+                          <img style="max-height:100%; width:100%; object-fit:contain;" src="{{project.picture_4.url}}" alt="" uk-cover>
                       </li>
                       {% endif %}
                       {% if project.picture_5 %}
-                        <li class="uk-width-3-4">
-                            <div class="uk-cover-container">
-                                <img src="{{project.picture_5.url}}" alt="" uk-cover>
-
-                            </div>
+                        <li>
+                            <img style="max-height:100%; width:100%; object-fit:contain;" src="{{project.picture_5.url}}" alt="" uk-cover>
                         </li>
                         {% endif %}
                         {% if project.picture_6 %}
-                          <li class="uk-width-3-4">
-                              <div class="uk-cover-container">
-                                  <img src="{{project.picture_6.url}}" alt="" uk-cover>
-
-                              </div>
+                          <li>
+                              <img style="max-height:100%; width:100%; object-fit:contain;" src="{{project.picture_6.url}}" alt="" uk-cover>
                           </li>
                           {% endif %}
                           {% if project.picture_7 %}
-                            <li class="uk-width-3-4">
-                                <div class="uk-cover-container">
-                                    <img src="{{project.picture_7.url}}" alt="" uk-cover>
-
-                                </div>
+                            <li>
+                                <img style="max-height:100%; width:100%; object-fit:contain;" src="{{project.picture_7.url}}" alt="" uk-cover>
                             </li>
                             {% endif %}
                             {% if project.picture_8 %}
-                              <li class="uk-width-3-4">
-                                  <div class="uk-cover-container">
-                                      <img src="{{project.picture_8.url}}" alt="" uk-cover>
-
-                                  </div>
+                              <li>
+                                  <img style="max-height:100%; width:100%; object-fit:contain;" src="{{project.picture_8.url}}" alt="" uk-cover>
                               </li>
                               {% endif %}
                               {% if project.picture_9 %}
-                                <li class="uk-width-3-4">
-                                    <div class="uk-cover-container">
-                                        <img src="{{project.picture_9.url}}" alt="" uk-cover>
-
-                                    </div>
+                                <li>
+                                    <img style="max-height:100%; width:100%; object-fit:contain;" src="{{project.picture_9.url}}" alt="" uk-cover>
                                 </li>
                                 {% endif %}
             </ul>
 
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover"  href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
         </div>
+
 
 
       </div>

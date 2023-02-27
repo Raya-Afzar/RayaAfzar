@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html dir="rtl" style="overflow-x: hidden;background: #9A7A30;background: -webkit-linear-gradient(bottom left, #9A7A30, #CDAD63);background: -moz-linear-gradient(bottom left, #9A7A30, #CDAD63);background: linear-gradient(to top right, #9A7A30, #CDAD63);background-attachment: fixed;">
+<html dir="rtl" style="background: #9A7A30;background: -webkit-linear-gradient(bottom left, #9A7A30, #CDAD63);background: -moz-linear-gradient(bottom left, #9A7A30, #CDAD63);background: linear-gradient(to top right, #9A7A30, #CDAD63);background-attachment: fixed;">
 <head>
   {% block head_block %}
 {% endblock %}
@@ -21,7 +21,7 @@
   <script src="{% static 'js/uikit-icons.min.js' %}" ></script>
 </head>
       <body >
-        <div uk-sticky="end: #scrollup-dropdown; show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky" >
+        <div style="overflow-x:hidden;" uk-sticky="end: #scrollup-dropdown; show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky" >
                         <nav class="uk-navbar-container border-radius-2 shadow-3" style="margin:20px; background-color:#f2f2f2;">
                             <div class="uk-container uk-container-expand">
                                 <div uk-navbar="" class="uk-navbar ">
