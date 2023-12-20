@@ -8,6 +8,7 @@ from django.http import HttpResponseRedirect
 
 from mysite.company.models import ContactUsModel
 from mysite.company.forms import ContactUsForm
+from mysite.order.views import InitCaptcha
 
 
 
@@ -19,9 +20,17 @@ class ContactUsCreateView(CreateView):
     success_url = reverse_lazy('company:contact_us_success')
 
     def form_valid(self, form):
+        captcha_value = self.request.POST.get('captcha')
+        if not captcha_value.isnumeric():
+            return render(self.request, 'company/contact-us.html', {'error_message': 'کپچا اشتباه است', 'form':self.form_class})
 
-        self.object = form.save()
-        return super().form_valid(form)
+        if int(captcha_value) == self.request.session["captcha"]:
+            self.request.session["captcha"] = None
+                
+            self.object = form.save()
+            return super().form_valid(form)
+        else:
+            return render(self.request, 'company/contact-us.html', {'error_message': 'کپچا اشتباه است', 'form':self.form_class})
 
 
 class ContactUsListView(LoginRequiredMixin, ListView):

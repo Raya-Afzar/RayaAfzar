@@ -15,11 +15,31 @@
 <section>
   <div class="inner">
 
-    <div class="uk-inline uk-hidden@m">
-        <img loading="lazy" decoding="async" style="background-size: cover;background-image:URL(data:image/svg+xml;base64,[svgtext]);" src="/media/statics/homepage/portrait4.webp"  >
+    <div style="position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;" class="uk-inline uk-hidden@m">
+        <img loading="lazy" decoding="async" style="position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: auto;
+        min-height: 100%;
+        background-size: cover;
+        object-fit: cover;" src="/media/statics/homepage/portrait4.webp"  >
     </div>
-    <div class="uk-inline uk-visible@m">
-        <img loading="lazy" decoding="async" style="background-size: cover;background-image:URL(data:image/svg+xml;base64,[svgtext]);"  src="/media/statics/homepage/landscape3.webp" >
+    <div style=" position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;" class="uk-inline uk-visible@m">
+        <img loading="lazy" decoding="async" style="position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: auto;
+        min-height: 100%;
+        background-size: cover;
+        object-fit: cover;"  src="/media/statics/homepage/landscape3.webp" >
 
     </div>
 
@@ -35,9 +55,9 @@
 
 
 <div  style="padding:4%; max-width:1300px" class="uk-align-center">
-     <h1 style="margin-top:100px;" class="font-7 white-text fYekan-bold">خدمات مجموعه ی رایاافزار</h1>
+     <h1 style="margin-top:100px;" class="font-6 white-text fYekan-bold">خدمات مجموعه ی برنامه نویسی رایاافزار</h1>
      <br>
-  <div  data-color="violet" class="fYekan gray-text-lighten-4 font-4 uk-grid-match uk-child-width-1-1 uk-text-center" uk-grid>
+  <div  data-color="violet" class="fYekan gray-text-lighten-4 font-3 uk-grid-match uk-child-width-1-1 uk-text-center" uk-grid>
 
 <div class="uk-visible@s" >
   <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin glass-effect shadow-3" uk-grid >
@@ -49,8 +69,9 @@
           <div class="uk-card-body uk-text-justify">
               <h3 class=" font-5 white-text fYekan-bold">برنامه نویسی و طراحی وب</h3>
               <p class="gray-text-lighten-4 uk-flex-middle">مجموعه ی رایاافزار با دارا بودن برنامه نویسان مجرب توانایی برنامه نویسی وب در زبان های
-              مختلف بر اساس نیاز های شما مشتریان عزیز اعم از پایتون, پی اچ پی و ... را داراست. لازم به ذکر است مجموعه ی رایاافزار از سیستم
-              آماده ای همانند وردپرس برای ساخت سایت استفاده نمی کند و تمامی سایت های طراحی شده کد نویسی می باشند.
+              مختلف بر اساس نیاز های شما مشتریان عزیز اعم از Python (Django), C# (.NET)  و ...
+              به عنوان بک اند و ReactJs, Angular به عنوان فرانت اند را داراست. لازم به ذکر است مجموعه ی رایاافزار از سیستم
+              آماده ای همانند وردپرس برای ساخت سایت استفاده نمی کند و تمامی سایت های طراحی شده توسط مجموعه ی رایا افزار کد نویسی شده می باشند.
 <br>
 <a style="color:#c9c9c9;font-family: 'Yekan';font-weight: bold;" class="" href="{% url 'order:order_create' %}">سفارش پروژه ...></a>
             </p>
@@ -70,8 +91,29 @@
               <h3 class=" font-5 white-text fYekan-bold">طراحی نرم افزار</h3>
               <p class="gray-text-lighten-4">
                 برنامه نویسی کامپیوتر و طراحی نرم افزار یکی دیگر از خدمات ارائه شده
-                توسط تیم ما می باشد. با استفاده از فریمورک های قدرتمندی مانند Qt مجموعه ی
+                توسط تیم برنامه نویسی رایا افزار می باشد. با استفاده از فریمورک های قدرتمندی مانند Qt یا DevExpress در زبان برنامه نویسی C# مجموعه ی
                  رایا افزار توانایی تولید نرم افزار های بدون نقص با ظاهر زیبا و کارآمد و قابلیت گسترش داده شدن را دارد
+              <br>
+              <a style="color:#c9c9c9;font-family: 'Yekan';font-weight: bold;" class="" href="{% url 'order:order_create' %}">سفارش پروژه ...></a>
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="uk-visible@s">
+  <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin glass-effect shadow-3" uk-grid>
+    <div class="uk-card-media-left uk-cover-container uk-width-1-3">
+          <img height="400"  src="media/statics/homepage/mobile.png" alt="" uk-cover>
+          <canvas height="300"></canvas>
+        </div>
+        <div class=" uk-width-2-3">
+            <div class="uk-card-body uk-text-justify">
+              <h3 class=" font-5 white-text fYekan-bold">طراحی اپلیکیشن Android و IOS</h3>
+              <p class="gray-text-lighten-4">
+تیم برنامه نویسی رایاافزار با دارا بودن برنامه نویسان مسلط به ReactJs و زامارین طراحی اپلیکیشن های تلفن همراه توانایی طراحی و تولید اپ های اندروید و آی او اس را 
+دارد. برنامه های تولید شده دارای خروجی قابل نصب بر روی سیستم های عامل تلفن های همراه خواهند بود.
               <br>
               <a style="color:#c9c9c9;font-family: 'Yekan';font-weight: bold;" class="" href="{% url 'order:order_create' %}">سفارش پروژه ...></a>
               </p>
@@ -82,14 +124,14 @@
 
 <div class="uk-visible@s">
   <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin glass-effect shadow-3" uk-grid>
-      <div class="uk-card-media-left uk-cover-container uk-width-1-3">
+      <div class="uk-flex-last@s uk-card-media-right uk-cover-container uk-width-1-3">
           <img height="400"  src="media/statics/homepage/develope.png" alt="" uk-cover>
           <canvas height="300"></canvas>
-      </div>
-      <div class=" uk-width-2-3">
-          <div class="uk-card-body uk-text-justify">
+        </div>
+        <div class=" uk-width-2-3">
+            <div class="uk-card-body uk-text-justify">
               <h3 class=" font-5 white-text fYekan-bold">دیگر خدمات</h3>
-              <p class="gray-text-lighten-4">طراحی افزونه ها, برنامه های کوچک اجرا شده در ترمینال و سایر موارد از مواردی است که توسط تیم رایاافزار
+              <p class="gray-text-lighten-4">طراحی افزونه ها, برنامه های کوچک اجرا شده در ترمینال و سایر موارد از مواردی است که توسط گروه برنامه نویسی تبریزی رایاافزار
               پشتیبانی می شود. همچنین مجموعه ی ما در تولید نرم افزار های گرافیکی با استفاده از فریمورک هایی مانند OpenGL پیشتاز است.
             <br>
 <a style="color:#c9c9c9;font-family: 'Yekan';font-weight: bold;" class="" href="{% url 'order:order_create' %}">سفارش پروژه ...></a>
@@ -98,6 +140,10 @@
       </div>
   </div>
 </div>
+
+
+
+
 
 <div class="uk-hidden@s">
     <div class="uk-card uk-card-default glass-effect shadow-3">
@@ -134,6 +180,23 @@
     </div>
 </div>
 
+<div class="uk-hidden@s" >
+  <div class="uk-card uk-card-default glass-effect shadow-3">
+      <div style="padding:7%;" class="uk-card-media-top">
+          <img height="400"  src="media/statics/homepage/mobile.png" alt="" >
+      </div>
+
+      <div class="uk-card-body uk-text-justify">
+          <h3 class=" font-5 white-text fYekan-bold uk-text-center">طراحی اپلیکیشن Android و IOS</h3>
+          <p class="gray-text-lighten-4">
+            تیم برنامه نویسی رایاافزار با دارا بودن برنامه نویسان مسلط به ReactJs و زامارین طراحی اپلیکیشن های تلفن همراه توانایی طراحی و تولید اپ های اندروید و آی او اس را 
+            دارد. برنامه های تولید شده دارای خروجی قابل نصب بر روی سیستم های عامل تلفن های همراه خواهند بود.
+                          <br>
+          <a style="color:#c9c9c9;font-family: 'Yekan';font-weight: bold;" class="" href="{% url 'order:order_create' %}">سفارش پروژه ...></a>
+          </p>
+      </div>
+  </div>
+</div>
 
 <div class="uk-hidden@s" >
     <div class="uk-card uk-card-default glass-effect shadow-3">
@@ -158,13 +221,13 @@
 
 <!-- Why Us? -->
 
-<h1 style="margin-top:130px" class="font-7 gray-text-lighten-4 fYekan-bold">چرا مجموعه ی رایاافزار</h1>
+<h1 style="margin-top:130px" class="font-6 gray-text-lighten-4 fYekan-bold">چرا گروه برنامه نویسی رایاافزار</h1>
 <div data-color="green" style="margin-top:40px;" class="uk-grid-match uk-child-width-1-1 uk-child-width-1-1@s uk-child-width-1-2@m uk-text-center " uk-grid>
 <div class="">
 
   <div class="border-radius-2 shadow-3 uk-card uk-card uk-card-body gray-lighten-4 fYekan gray-text-darken-4 " uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true; delay:550;">
 <h3 class="gray-text-darken-4 fYekan-bold">کیفیت طراحی بالا</h3>
-  <p class="uk-text-right">برنامه ها و سایت های طراحی شده توسط ما با دقت و حوصله بالا انجام می شوند. وجود واحد تست در مجموعه ی ما باعث شده است
+  <p class="uk-text-right uk-text-justify">برنامه ها و سایت های طراحی شده توسط ما با دقت و حوصله بالا انجام می شوند. وجود واحد تست در مجموعه ی ما باعث شده است
   برنامه های ما بدون هیچ عیب و نقصی باشند.</p>
   </div>
 
@@ -173,7 +236,7 @@
 
   <div class="border-radius-2 shadow-3 uk-card uk-card uk-card-body gray-darken-4 fYekan gray-text-lighten-4 " uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay:550;">
 <h3 class="gray-text-lighten-4 fYekan-bold">قیمت مناسب</h3>
-  <p class="uk-text-right">با انتخاب مجموعه ی رایاافزار برای طراحی نرم افزار و طراحی سایت مورد نظر خود در هزینه های خود صرفه جویی کنید.
+  <p class="uk-text-right uk-text-justify">با انتخاب مجموعه ی رایاافزار برای طراحی نرم افزار و طراحی سایت مورد نظر خود در هزینه های خود صرفه جویی کنید.
   با مقایسه ی تعرفه های مجموعه ی ما با سایر مجموعه ها به راحتی این نتیجه حاصل می شود که تیم رایا افزار بهترین انتخاب برای
 تبدیل ایده های خود به واقعیت می باشد.</p>
   </div>
@@ -184,7 +247,7 @@
 
   <div class="border-radius-2 shadow-3 uk-card uk-card uk-card-body gray-darken-4 fYekan gray-text-lighten-4 " uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true; delay:550;">
 <h3 class="gray-text-lighten-4 fYekan-bold">رعایت زمان بندی</h3>
-  <p class="uk-text-right">مجموعه ی رایا افزار متعهد به رعایت زمان بندی ذکر شده حین عقد قرارداد می باشد و در تلاش است تا در همه ی
+  <p class="uk-text-right uk-text-justify">مجموعه ی رایا افزار متعهد به رعایت زمان بندی ذکر شده حین عقد قرارداد می باشد و در تلاش است تا در همه ی
   حالات کارفرمایان محترم را از خدمات خود راضی نگه دارد.</p>
   </div>
 
@@ -194,7 +257,7 @@
 
   <div  class="border-radius-2 shadow-3 uk-card uk-card uk-card-body gray-lighten-4 fYekan gray-text-darken-4" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay:550;">
 <h3 class="gray-text-darken-4 fYekan-bold">پشتیبانی فعال</h3>
-  <p class="uk-text-right">تیم رایاافزار نه تنها تا زمان اتمام پروژه ی شما موظف به پشتیبانی و پاسخ دادن به مشتریان محترم می باشد, بلکه بعد از
+  <p class="uk-text-right uk-text-justify">تیم رایاافزار نه تنها تا زمان اتمام پروژه ی شما موظف به پشتیبانی و پاسخ دادن به مشتریان محترم می باشد, بلکه بعد از
   اتمام پروژه نیز پاسخگوی مشکلات احتمالی پیش آمده می باشد.</p>
   </div>
 
@@ -202,106 +265,19 @@
 
 </div>
 
-<h1 style="margin-top:110px" class="font-7 white-text fYekan-bold">نظرات برخی مشتریان</h1>
-<div style="margin-top:40px; padding-right:6%; padding-left:6%;" class="">
-
-
-  <div uk-slideshow="animation: scale;autoplay: true">
-
-      <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="center: true;tabindex:-1;">
-
-          <ul class="uk-slideshow-items" uk-height-viewport=" offset-bottom: 59" >
-              <li>
-                <div class="uk-cover-container">
-                  <div class="border-radius-2 shadow-3 uk-card uk-card gray-lighten-4 fYekan gray-text-darken-4">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-border-circle" width="40" height="40" src="/media/statics/homepage/soolenavvah.webp" alt="Avatar">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h3 style="color: #261E0C;" class="uk-card-title uk-margin-remove-bottom gold-text-darken-1 fYekan-bold font-4">مهندس نواح</h3>
-                                <p style="color: #292929;" class="uk-text-meta uk-margin-remove-top gray-text-darken-3 fYekan">کارفرمای پروژه ی سوله نواح</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="padding:5%" class="uk-text-justify">
-                        <p>بدون شک مجموعه ی رایاافزار یکی از بهترین ها در توسعه و طراحی وب می باشد.
-                        وجود برنامه نویسان مجرب و کاربلد و داشتن اخلاق حرفه ای از ویژگی های بارز این مجموعه می باشد. </p>
-                    </div>
-                </div>
-                </div>
-              </li>
-              <li>
-                <div class="uk-cover-container">
-                  <div class="border-radius-2 shadow-3 uk-card uk-card gray-lighten-4 fYekan gray-text-darken-4">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-border-circle" width="40" height="40" src="/media/statics/homepage/sholehkhiz.webp" alt="Avatar">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h3 style="color: #261E0C;" class="uk-card-title uk-margin-remove-bottom gold-text-darken-1 fYekan-bold font-4">مهندس حاتمی</h3>
-                                <p style="color: #292929;" class="uk-text-meta uk-margin-remove-top gray-text-darken-3 fYekan">کارفرمای پروژه ی شعله خیز</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="padding:5%" class="uk-text-justify">
-                        <p>من پس از آزمودن چند شرکت طراحی وب با رایاافزار آشنا شدم و به این نتیجه رسیدم که تمامی هزینه های قبل
-                        از رایاافزار اضافی بودند.</p>
-                    </div>
-                </div>
-                </div>
-              </li>
-              <li>
-                <div class="uk-cover-container">
-                  <div class="border-radius-2 shadow-3 uk-card gray-lighten-4 fYekan gray-text-darken-4">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-border-circle" width="40" height="40" src="/media/statics/homepage/shafayar.webp" alt="Avatar">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h3 style="color: #261E0C;" class=" uk-margin-remove-bottom gold-text-darken-1 fYekan-bold font-4">دکتر گلی</h3>
-                                <p style="color: #292929;" class=" uk-margin-remove-top gray-text-darken-3 fYekan">کارفرمای پروژه ی شفایار</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="padding:5%" class="uk-text-justify">
-                        <p>مجموعه ی رایاافزار باعث به وجود آمدن یک تجربه ی حرفه ای در کسب و  کار من شد.
-                        بعد از دیدن طرح اولیه ی پروژه ی سفارشی به اختلاف نظر بر خوردیم و این مجموعه بدون هیچ هزینه ی اضافی
-                      فرانت پروژه را از اول طراحی کرد.</p>
-                    </div>
-                </div>
-                </div>
-              </li>
-          </ul>
-
-          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-
-      </div>
-
-      <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
-
-  </div>
-
-
 
 </div>
-
-</div>
-
+<br><br><br><br><br>
 </div>
 
 <section  class="waving" style="background-color:#141414;" >
   <div class="inner ">
 
     <div style="padding:8%" class="uk-inline uk-hidden@m uk-position-center">
-        <img loading="lazy" decoding="async" style="background-size: cover;background-image:URL(data:image/svg+xml;base64,[svgtext]);margin-top:100px; " src="/media/statics/homepage/FinalPortrait.png"  >
+        <img loading="lazy" decoding="async" style="background-size: cover;margin-top:100px; " src="/media/statics/homepage/AspectsPortrait.png"  >
     </div>
-    <div style="padding:13%" class="uk-inline uk-visible@m uk-position-center">
-        <img loading="lazy" decoding="async" style="background-size: cover;background-image:URL(data:image/svg+xml;base64,[svgtext]); margin-top:110px;"  src="/media/statics/homepage/FinalLandscape.png" >
+    <div style="padding:13%; max-width: 1820px;" class="uk-inline uk-visible@m uk-position-center">
+        <img loading="lazy" decoding="async" style="background-size: cover;margin-top:110px;"  src="/media/statics/homepage/AspectsLandscape.png" >
 
     </div>
 </div>
@@ -309,20 +285,115 @@
 
 
 <div class="dark-gray-gradiant">
+  <div  style="padding:4%; max-width:1200px; margin-top:120px;" class="uk-align-center">
+
+
+    <h1 class="font-6 gold-text fYekan-bold">نظرات برخی مشتریان تیم برنامه نویسی رایا افزار</h1>
+    <div style="margin-top:40px;" class="">
+
+
+      <div uk-slideshow="animation: scale;autoplay: true">
+    
+          <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="center: true;tabindex:-1;">
+    
+              <ul class="uk-slideshow-items" uk-height-viewport=" offset-bottom: 65" >
+                  <li>
+                    <div class="uk-cover-container">
+                      <div class="border-radius-2 shadow-3 uk-card uk-card gold fYekan gray-text-darken-4">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="/media/statics/homepage/soolenavvah.webp" alt="Avatar">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 style="color: #261E0C;" class="uk-card-title uk-margin-remove-bottom gold-text-darken-1 fYekan-bold font-3">مهندس نواح</h3>
+                                    <p style="color: #292929;" class="uk-text-meta uk-margin-remove-top gray-text-darken-3 fYekan">کارفرمای پروژه ی سوله نواح</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding:5%" class="uk-text-justify">
+                            <p>بدون شک مجموعه ی رایاافزار یکی از بهترین گروه های برنامه نویسی نه تنها در تبریز بلکه در سراسر ایران در حوزه ی توسعه و طراحی وب می باشد.
+                            وجود برنامه نویسان مجرب و کاربلد و داشتن اخلاق حرفه ای از ویژگی های بارز این مجموعه می باشد. </p>
+                        </div>
+                    </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="uk-cover-container">
+                      <div class="border-radius-2 shadow-3 uk-card uk-card gold fYekan gray-text-darken-4">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="/media/statics/homepage/sholehkhiz.webp" alt="Avatar">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 style="color: #261E0C;" class="uk-card-title uk-margin-remove-bottom gold-text-darken-1 fYekan-bold font-3">مهندس حاتمی</h3>
+                                    <p style="color: #292929;" class="uk-text-meta uk-margin-remove-top gray-text-darken-3 fYekan">کارفرمای پروژه ی شعله خیز</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding:5%" class="uk-text-justify">
+                            <p>
+                              من پس از آزمودن چند شرکت طراحی وب با رایاافزار آشنا شدم و کار آزموده بودن این تیم باعث اجابت تمام نیاز های شرکت ما شد. 
+                          </p>
+                        </div>
+                    </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="uk-cover-container">
+                      <div class="border-radius-2 shadow-3 uk-card gold fYekan gray-text-darken-4">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="/media/statics/homepage/shafayar.webp" alt="Avatar">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 style="color: #261E0C;" class=" uk-margin-remove-bottom gold-text-darken-1 fYekan-bold font-3">دکتر گلی</h3>
+                                    <p style="color: #292929;" class=" uk-margin-remove-top gray-text-darken-3 fYekan">کارفرمای پروژه ی شفایار</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding:5%" class="uk-text-justify">
+                            <p>مجموعه ی برنامه نویسی تبریزی رایاافزار باعث به وجود آمدن یک تجربه ی حرفه ای در کسب و  کار من شد.
+                            بعد از دیدن طرح اولیه ی پروژه ی سفارشی به اختلاف سلیقه بر خوردیم و این مجموعه بدون هیچ هزینه ی اضافی
+                          قسمت فرانت پروژه را از اول طراحی کرد.</p>
+                        </div>
+                    </div>
+                    </div>
+                  </li>
+              </ul>
+
+          </div>
+
+      </div>
+    
+    
+    
+    </div>
+    
+</div>
+
 
 <!-- Our Services -->
-
-
+<div style="margin:0 auto; max-width:1380px; " class="">
+<div style=" text-align-last: center; " class="uk-hidden@m">
+  <img loading="lazy" decoding="async" style="max-height: 100vh;" src="/media/statics/homepage/DesignStepsPortrait.png"  >
+</div>
+<div style="text-align-last: center;" class="uk-visible@m">
+  <img  loading="lazy" decoding="async"  src="/media/statics/homepage/DesignStepsLandscape.png" >
+</div>
+</div>
 
 <div  style="padding:4%; max-width:1200px" class="uk-align-center">
-     <h1 style="margin-top:100px;" class="font-7 gold-text fYekan-bold">درباره ی ما</h1>
+     <h1 style="margin-top:50px;" class="font-6 gold-text fYekan-bold">درباره ی گروه برنامه نویسی رایاافزار</h1>
      <br>
-     <div style=" margin:auto;" class="font-4 gray-text-darken-4 border-radius-2 shadow-3 uk-card uk-card uk-card-body gold fYekan uk-text-justify">
-       مجموعه ی رایاافزار در حوزه ی برنامه نویسی و طراحی وب چند سال است که فعالیت خود را شروع کرده. در همین زمان چندین وبسایت و برنامه را طراحی کرده که هیچ کدام از آنها از هیچ سیستم آماده ای استفاده نکرده است
+     <div style=" margin:auto;" class="font-3 gray-text-darken-4 border-radius-2 shadow-3 uk-card uk-card uk-card-body gold fYekan uk-text-justify">
+       مجموعه ی طراحی وب و برنامه نویسی رایاافزار در حوزه ی برنامه نویسی و طراحی وب چند سال است که فعالیت خود را شروع کرده. در همین زمان چندین وبسایت و برنامه را طراحی کرده که هیچ کدام از آنها از هیچ سیستم آماده ای استفاده نکرده است
 
    <br>
-   رایاافزار در چندین حوزه ی اصلی متفاوت فعالیت می کند. دو مورد از خدماتی که بیشترین درخواست را از میان
-   مشتریان داشته ایم برنامه نویسی کامپیوتر و برنامه نویسی سمت وب بوده است.
+   رایاافزار در چندین حوزه ی اصلی متفاوت فعالیت می کند. سه مورد از خدماتی که بیشترین درخواست را از میان
+   مشتریان داشته ایم برنامه نویسی کامپیوتر برنامه نویسی سمت وب و ایجاد اپلیکیشن های تلفن همراه بوده است.
    <br><br>
        امروزه، طراحی سایت به یکی از موضوعات مهمی تبدیل شده است که تمامی کسب و کارهایی که
        می خواهند آینده درخشانی را برای خود رقم بزنند باید به آن توجه داشته باشند. در واقع، بسیاری از
@@ -333,18 +404,16 @@
        <br>
        از اصول اصلی که در طراحی و برنامه نویسی سمت وب در مجموعه ی رایاافزار رعایت می شود ریسپانسیو بودن و بهینه بودن
        سایت ها برای سئو است تا سایت های طراحی شده در مجموعه ی ما بالاترین رتبه ها را در گوگل بدست آورد.
-       همچنین زیبایی و کیفیت بالای سایت های طراحی شده از نمونه کار های این مجموعه واقع در تبریز مشخص است.
+       همچنین زیبایی و کیفیت بالای سایت های طراحی شده از نمونه کار های این مجموعه برنامه نویسی واقع در تبریز مشخص است.
        <br>
    <br>
-   برنامه نویسی دسکتاپ یا تحت ویندوز عبارت است از ساخت نرم افزارهای
-   ی که روی کامپیوترها یا لپ تاپ ها نصب و یا بدون نیاز به نصب اجرا می شوند. یکی از
-   قابلیت‌های مطرح در زبان‌های برنامه‌نویسی مشهور متن‌باز بودن یا Open Source
-   بودن آن است. اگر زبانی متن‌باز باشد، شما می‌توانید کدهای اصلی آن را به فراخور نیاز خود تغییر
-    دهید و بستر مناسب برنامه‌نویسی را ایجاد کنید. ما در مجموعه ی رایاافزار با برنامه نویسی کردن
-    پروژه ی مورد نظر شما در زبان های مختلف مانند C# یا پایتون به شما در مسیر رسیدن به هدف خود کمک می کنیم.
+   وجود کادر مجرب و کارآمد در گروه ما باعث شده است تا تیم رایاافزار دایره ی زبان  برنامه نویسی وسیعی داشته باشد. برخی از 
+   زبان هایی که در مجموعه ی برنامه نویسی ما تا به حال استفاده شده است عبارت است از 
+   Python, C#, C++, Javascript, ReactJs, React Native, ...
    <br>
-   برنامه های طراحی شده در مجموعه ی ما از استاندارد های جهانی پیروی می کند و قابلیت بسط و گسترش داده شدن
-   داشته و همچنین برنامه ی نهایی پس از گذشتن از چندین مرحله تست و رفع عیب شدن به دست مشتریان می رسد.
+   برنامه های طراحی شده در مجموعه ی ما از استاندارد های جهانی و اصول برنامه نویسی تمیز یا به اصطلاح کلین کد پیروی می کند و قابلیت بسط و گسترش داده شدن
+   توسط برنامه نویسان دیگر را نیز داشته و همچنین وجود تیم کنترل کیفی در تیم برنامه نویسی رایافزار تبریز باعث شده است 
+   تا محصول نهایی در مرحله ی تحویل دارای کمترین میزان عیب باشد..
 
    </div>
 </div>
@@ -356,30 +425,5 @@
 
 {% endblock %}
 {% block script_block %}
-<script type="text/javascript">
 
-$(function(){
-setInterval(oneSecondFunction, 200);
-});
-
-function oneSecondFunction() {
-  myDivObj = document.getElementById("myDivID")
-  let myDivObjBgColor = window.getComputedStyle(myDivObj).backgroundColor;
-
-  if (String(myDivObjBgColor) == 'rgba(25, 0, 0, 0.01)') {
-
-
-    document.body.style.backgroundColor = "#000000";
-    // Remove all classes on body with color-
-
-}
-else {
-  document.body.style.backgroundColor = "#c1993d";
-}
-
-
-}
-
-
-</script>
 {% endblock %}

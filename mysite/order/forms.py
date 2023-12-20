@@ -14,6 +14,6 @@ class OrderForm(forms.ModelForm):
         widgets = {
             'name': forms.TextInput(attrs={'class':'uk-input fYekan redC-text border-radius-3','placeholder':''},),
             'phone_number': forms.TextInput(attrs={'class':'uk-input fYekan redC-text border-radius-3','placeholder':''},),
-            'description': forms.Textarea(attrs={'style':'font-size:14px; ','class':'uk-textarea border-radius-3 fYekan input','rows':'10','placeholder':'هر گونه توضیحات دیگر را در صورت لزوم در این فیلد وارد نمائید.'},),
+            'description': forms.Textarea(attrs={'style':'font-size:14px; ','class':'uk-textarea border-radius-3 fYekan input','rows':'14','placeholder':'هر گونه توضیحات دیگر را در صورت لزوم در این فیلد وارد نمائید.'},),
             'title': forms.TextInput(attrs={'class':'uk-input fYekan redC-text border-radius-3','placeholder':''},),
         }

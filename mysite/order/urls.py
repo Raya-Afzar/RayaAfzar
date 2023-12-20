@@ -5,7 +5,7 @@ from django.contrib.auth import views as auth_views
 
 from mysite.order.views import (OrderCreateView, OrderSuccessView,
             CheckedOrderListView, UnCheckedOrderListView, OrderCheckView,
-            OrderDeleteView,)
+            OrderDeleteView,InitCaptcha)
 
 app_name ='order'
 urlpatterns = [
@@ -15,5 +15,6 @@ urlpatterns = [
     path('order-success/',OrderSuccessView.as_view(), name='order_success'),
     path('order-check/<int:pk>/',OrderCheckView, name='order_check'),
     path('order-delete/<int:pk>/',OrderDeleteView.as_view(), name='order_delete'),
+    path('create-captcha/',InitCaptcha, name='captcha'),
 
 ]

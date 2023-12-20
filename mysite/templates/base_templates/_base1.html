@@ -8,7 +8,6 @@
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="shortcut icon" type="image/png" href="https://raya-afzar.ir/favicon.png"/>
 <link rel="shortcut icon" type="image/png" href="/media/statics/logo/Logo.png" sizes="16x16"/>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,180 +20,180 @@
   <script src="{% static 'js/uikit-icons.min.js' %}" ></script>
 </head>
       <body >
-        <div style="overflow-x:hidden;" uk-sticky="end: #scrollup-dropdown; show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky" >
-                        <nav class="uk-navbar-container border-radius-2 shadow-3" style="margin:20px; background-color:#f2f2f2;">
-                            <div class="uk-container uk-container-expand">
-                                <div uk-navbar="" class="uk-navbar ">
-
-                                  <a class="uk-navbar-item uk-visible@m" href="{% url 'home' %}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="gold-text-darken-1 bi bi-house" viewBox="0 0 16 16">
-                                      <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
-                                    </svg>
-                                  </a>
-                                  <a class="uk-navbar-item uk-hidden@m uk-navbar-toggle gold-text-darken-1" id="humberger" href="#" uk-navbar-toggle-icon uk-toggle="target: #sidenav" href="#">
-                                  </a>
-
-                                  <ul class="uk-navbar-nav uk-visible@m">
-                                      <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:18px; color:#9A7A30;" href="{% url 'order:order_create' %}">سفارش پروژه</a></li>
-                                      <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:18px; color:#9A7A30;" href="{% url 'project:list' %}">نمونه کارها</a></li>
-
-                                      <li >
-                                          <a style=" font-family: 'Yekan';  font-size:18px; color:#9A7A30;" href="" aria-haspopup="true" aria-expanded="false">
-
-خدمات ما
-<svg style="margin-top:8px; margin-right:5px;"xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-</svg>
-
-                                          </a>
-                                          <div class="uk-navbar-dropdown gray-lighten-4 border-radius-2 shadow-4" style="max-width: 1249px; top: 80px; left: 337.688px;">
-                                              <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:15px; color:#9A7A30;" href="{% url 'company:programmingservice' %}">
-
-                                                  برنامه نویسی کامپیوتر</a></li>
-                                                  <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:15px; color:#9A7A30;" href="{% url 'company:webdevelopmentservice' %}">
-
-                                                برنامه نویسی و طراحی وب</a></li>
 
 
-
-                                                  </ul>
-                                          </div>
-                                      </li>
-
-                                      <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:18px; color:#9A7A30;" href="{% url 'company:pricing' %}">تعرفه ها</a></li>
-                                  </ul>
-                                  <div class="uk-navbar-left uk-hidden@m">
-                                  <a style="padding-left:60px;" class="uk-navbar-item " href="{% url 'home' %}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="gold-text-darken-1 bi bi-house" viewBox="0 0 16 16">
-                                      <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
-                                    </svg>
-                                  </a>
-                                </div>
-                                    <div class="uk-navbar-left uk-visible@m">
-
-
-
-                                        <ul class="uk-navbar-nav">
-
-                                            <li style="padding-left:25px;">
-                                                <a style=" font-family: 'Yekan';  font-size:18px; color:#9A7A30;" href="" aria-haspopup="true" aria-expanded="false">
-                                                  <svg style="margin-top:8px; margin-left:5px;"xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-</svg>
-رایاافزار
-
-                                                </a>
-                                                <div class="uk-navbar-dropdown gray-lighten-4 border-radius-2 shadow-4" style="max-width: 1249px; top: 80px; left: 337.688px;">
-                                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                      <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:15px; color:#9A7A30;" href="{% url 'company:contact_us' %}">
-                                                        <svg style="margin-top:10px; margin-left:6px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                                                          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                                                        </svg>
-                                                        تماس با ما</a></li>
-                                                        <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:15px; color:#9A7A30;" href="{% url 'company:about_us' %}">
-                                                          <svg style="margin-top:10px;" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
-                                                            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                                                          </svg>
-                                                          درباره ی ما</a></li>
-
-                                                        <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:15px; color:#9A7A30;" href="{% url 'company:FAQs' %}">
-                                                          <svg style="margin-top:10px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-question" viewBox="0 0 16 16">
-                                                            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-                                                          </svg>
-                                                          سوالات متدوال</a></li>
-
-                                                        </ul>
-                                                </div>
-                                            </li>
-
-                                        </ul>
-
-                                    </div>
-                                    <div class="uk-navbar-right">
-
-
-                                </div>
+        <div style="margin-bottom: 80px !important;" uk-sticky="end: #scrollup-dropdown;  cls-active: uk-navbar-sticky" class="uk-sticky" >
+          <nav class="uk-navbar-container shadow-3" style="margin:20px; background-color:#f2f2f2;position: fixed;right: 0;left: 0;top: 0;z-index: 1030; border-radius:16px 0 16px 0;">
+              <div class="uk-container uk-container-expand">
+                  <div uk-navbar="" class="uk-navbar ">
+ 
+                    <a class="uk-navbar-item uk-visible@m" href="{% url 'home' %}">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="gold-text-darken-1 bi bi-house" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                      </svg>
+                    </a>
+                    <a class="uk-navbar-item uk-hidden@m uk-navbar-toggle gold-text-darken-1" id="humberger" href="#" uk-navbar-toggle-icon uk-toggle="target: #sidenav" href="#">
+                    </a>
+ 
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:18px; color:#9A7A30;" href="{% url 'order:order_create' %}">سفارش پروژه</a></li>
+                        <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:18px; color:#9A7A30;" href="{% url 'project:list' %}">نمونه کارها</a></li>
+ 
+                        <li >
+                            <a style=" font-family: 'Yekan';  font-size:18px; color:#9A7A30;" href="" aria-haspopup="true" aria-expanded="false">
+ 
+ خدمات ما
+ <svg style="margin-top:8px; margin-right:5px;"xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+ <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+ </svg>
+ 
+                            </a>
+                            <div class="uk-navbar-dropdown gray-lighten-4 border-radius-2 shadow-4" style="max-width: 1249px; top: 80px; left: 337.688px;">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                  <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:15px; color:#9A7A30;" href="{% url 'company:programmingservice' %}">
+ 
+                                    برنامه نویسی کامپیوتر</a></li>
+                                    <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:15px; color:#9A7A30;" href="{% url 'company:webdevelopmentservice' %}">
+ 
+                                  برنامه نویسی و طراحی وب</a></li>
+ 
+ 
+ 
+                                    </ul>
                             </div>
-                        </nav>
-                    </div>
-
-
-
-
-                    <!-- side nav -->
-
-                <div style="z-index:5000" id="sidenav" uk-offcanvas="flip: true" style="background: rgb(249,249,249);background: linear-gradient(144deg, rgba(249,249,249,1) 5%, rgba(233,233,233,1) 100%); box-shadow: 0 15px 17px rgba(0, 0,0, 0.18);" class="uk-offcanvas">
-                    <div style="background: rgb(249,249,249);background: linear-gradient(144deg, rgba(249,249,249,1) 5%, rgba(233,233,233,1) 100%); box-shadow: 0 15px 17px rgba(0, 0,0, 0.18);" class="uk-offcanvas-bar">
-                        <ul class="uk-nav">
-                          <li style="border-bottom:1px #9A7A30 solid;">
-
-                              <a style=" color:#9A7A30; font-family: 'Yekan';font-weight: bold;  font-size:18px;  margin-top:5px;" href="{% url 'home' %}">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="gold-text-darken-1 bi bi-house" viewBox="0 0 16 16">
-                                  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
-                                </svg>
-                              خانه
-                              </a>
-                          </li>
-<li>
-                          <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px;  margin-top:5px;" href="{% url 'order:order_create' %}">
-
-                            سفارش پروژه</a></li><li>
-                            <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; margin-top:5px; " href="{% url 'project:list' %}">
-
-                              نمونه کارها</a></li><li style="border-bottom:1px #9A7A30 solid;">
-                              <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; margin-top:5px;" href="{% url 'company:pricing' %}">
-
-                                تعرفه ها</a></li>
-                                <li >
-                                <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; margin-top:5px;" href="{% url 'company:programmingservice' %}">
-
-                                  برنامه نویسی کامپیوتر</a></li>
-                                  <li style="border-bottom:1px #9A7A30 solid;">
-                                  <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; margin-top:5px;" href="{% url 'company:webdevelopmentservice' %}">
-
-                                    برنامه نویسی و طراحی وب</a></li>
-<li>
-                            <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; " href="{% url 'company:contact_us' %}">
-                              <svg style="margin-top:5px; margin-left:6px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                              </svg>
-                              تماس با ما</a></li><li>
-                              <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; " href="{% url 'company:about_us' %}">
-                                <svg style="margin-top:5px;" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
-                                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                                </svg>
-                                درباره ی ما</a></li><li style="border-bottom:1px #9A7A30 solid;">
-                                <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; " href="{% url 'company:FAQs' %}">
-                                  <svg style="margin-top:5px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-question" viewBox="0 0 16 16">
-                                    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-                                  </svg>
-                                  سوالات متداول</a></li>
-
-                                  <li style="border-bottom:1px #9A7A30 solid;">
-                                  <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; " href="{% url 'login' %}">
-
-                                    ورود</a></li>
-
-
-                        </ul>
-
-                    </div>
-                </div>
-                <!-- side nav end -->
-
+                        </li>
+ 
+                        
+                    </ul>
+                    <div class="uk-navbar-left uk-hidden@m">
+                    <a style="padding-left:60px;" class="uk-navbar-item " href="{% url 'home' %}">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="gold-text-darken-1 bi bi-house" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                      </svg>
+                    </a>
+                  </div>
+                      <div class="uk-navbar-left uk-visible@m">
+ 
+ 
+ 
+                          <ul class="uk-navbar-nav">
+ 
+                              <li style="padding-left:25px;">
+                                  <a style=" font-family: 'Yekan';  font-size:18px; color:#9A7A30;" href="" aria-haspopup="true" aria-expanded="false">
+                                    <svg style="margin-top:8px; margin-left:5px;"xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+ <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+ </svg>
+ رایاافزار
+ 
+                                  </a>
+                                  <div class="uk-navbar-dropdown gray-lighten-4 border-radius-2 shadow-4" style="max-width: 1249px; top: 80px; left: 337.688px;">
+                                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:15px; color:#9A7A30;" href="{% url 'company:contact_us' %}">
+                                          <svg style="margin-top:10px; margin-left:6px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                          </svg>
+                                          تماس با ما</a></li>
+                                          <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:15px; color:#9A7A30;" href="{% url 'company:about_us' %}">
+                                            <svg style="margin-top:10px;" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
+                                              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                            درباره ی ما</a></li>
+ 
+                                          <li class="uk-active"><a style=" font-family: 'Yekan';  font-size:15px; color:#9A7A30;" href="{% url 'company:FAQs' %}">
+                                            <svg style="margin-top:10px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-question" viewBox="0 0 16 16">
+                                              <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                                            </svg>
+                                            سوالات متدوال</a></li>
+ 
+                                          </ul>
+                                  </div>
+                              </li>
+ 
+                          </ul>
+ 
+                      </div>
+                      <div class="uk-navbar-right">
+ 
+ 
+                  </div>
+              </div>
+              </div>
+          </nav>
+        </div>
+ 
+ 
+ 
+        <!-- side nav -->
+ 
+    <div style="z-index:5000" id="sidenav" uk-offcanvas="flip: true" style="background: rgb(249,249,249);background: linear-gradient(144deg, rgba(249,249,249,1) 5%, rgba(233,233,233,1) 100%); box-shadow: 0 15px 17px rgba(0, 0,0, 0.18);" class="uk-offcanvas">
+        <div style="background: rgb(249,249,249);background: linear-gradient(144deg, rgba(249,249,249,1) 5%, rgba(233,233,233,1) 100%); box-shadow: 0 15px 17px rgba(0, 0,0, 0.18);" class="uk-offcanvas-bar">
+            <ul class="uk-nav">
+              <li style="border-bottom:1px #9A7A30 solid;">
+ 
+                  <a style=" color:#9A7A30; font-family: 'Yekan';font-weight: bold;  font-size:18px;  margin-top:5px;" href="{% url 'home' %}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="gold-text-darken-1 bi bi-house" viewBox="0 0 16 16">
+                      <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                    </svg>
+                  خانه
+                  </a>
+              </li>
+ <li>
+              <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px;  margin-top:5px;" href="{% url 'order:order_create' %}">
+ 
+                سفارش پروژه</a></li><li>
+                <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; margin-top:5px; " href="{% url 'project:list' %}">
+ 
+                  نمونه کارها</a></li>
+                    <li >
+                    <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; margin-top:5px;" href="{% url 'company:programmingservice' %}">
+ 
+                      برنامه نویسی کامپیوتر</a></li>
+                      <li style="border-bottom:1px #9A7A30 solid;">
+                      <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; margin-top:5px;" href="{% url 'company:webdevelopmentservice' %}">
+ 
+                        برنامه نویسی و طراحی وب</a></li>
+ <li>
+                <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; " href="{% url 'company:contact_us' %}">
+                  <svg style="margin-top:5px; margin-left:6px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>
+                  تماس با ما</a></li><li>
+                  <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; " href="{% url 'company:about_us' %}">
+                    <svg style="margin-top:5px;" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
+                      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                    درباره ی ما</a></li><li style="border-bottom:1px #9A7A30 solid;">
+                    <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; " href="{% url 'company:FAQs' %}">
+                      <svg style="margin-top:5px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-question" viewBox="0 0 16 16">
+                        <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                      </svg>
+                      سوالات متداول</a></li>
+ 
+                      <li style="border-bottom:1px #9A7A30 solid;">
+                      <a style="color:#9A7A30; font-family: 'Yekan', sans-serif; font-size:18px; " href="{% url 'login' %}">
+ 
+                        ورود</a></li>
+ 
+ 
+            </ul>
+ 
+        </div>
+    </div>
+    <!-- side nav end -->
+ 
+ 
+ 
       {% block body_block %}
       {% endblock %}
 
 
-      <footer style="padding:30px; " class="gray-gradiant font-3">
+      <footer style="padding:30px; margin-top: 30px;;" class="gray-gradiant font-3">
               <div  class="uk-grid uk-grid-small fYekan uk-margin" style="padding-bottom:30px;" uk-grid>
                 <div class="uk-width-1-4@s uk-width-1-2 uk-margin-top">
 
               <a href="{% url 'home' %}" class="gold-text">خانه</a><br>
               <a href="{% url 'order:order_create' %}" class="gold-text">سفارش پروژه</a><br>
               <a href="{% url 'project:list' %}" class="gold-text">نمونه کارها</a><br>
-              <a href="#" class="gold-text">تعرفه ها</a><br>
               <a href="{% url 'account:login' %}" class="gold-text">ورود</a><br>
               <a href="{% url 'logout' %}" class="gold-text">خروج</a><br>
 
@@ -211,7 +210,7 @@
                 </div>
                 <div style="margin-bottom:-60px;" class="uk-width-1-2@s uk-width-1-1" uk-grid>
 <div class="uk-width-1-1 uk-text-center">
-<a class="uk-text-center"  href="{% url 'home' %}"> <img loading="lazy" decoding="async" style="background-size: cover;background-image:URL(data:image/svg+xml;base64,[svgtext]); margin-bottom:-20px; margin-top:20px;" width="160px" src="/media/statics/logo/Logo_name2.png" alt="لوگوی رایاافزار"> </a>
+<a class="uk-text-center"  href="{% url 'home' %}"> <img loading="lazy" decoding="async" style="background-size: cover; margin-bottom:-20px; margin-top:20px;" width="160px" src="/media/statics/logo/Logo_name2.png" alt="لوگوی رایاافزار"> </a>
 </div>
 
 <div class=" uk-width-1-2@s uk-width-1-1 ">
@@ -264,6 +263,7 @@
 
       </div>
 
+      <script src="{% static 'js/jquery.min.js' %}"></script>
 
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
           <script type="text/javascript">

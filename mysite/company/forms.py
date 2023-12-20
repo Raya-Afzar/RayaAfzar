@@ -14,7 +14,7 @@ class ContactUsForm(forms.ModelForm):
         widgets = {
             'name': forms.TextInput(attrs={'class':'uk-input fYekan redC-text border-radius-3','placeholder':''},),
             'phone_number': forms.TextInput(attrs={'class':'uk-input fYekan border-radius-3','placeholder':''},),
-            'request': forms.Textarea(attrs={'style':'font-size:14px; ','class':'border-radius-3 uk-textarea fYekan input','rows':'10','placeholder':'هر گونه انتقاد پیشنهاد یا درخواستی از ما دارید با ما در میان بگذارید'},),
+            'request': forms.Textarea(attrs={'style':'font-size:14px; ','class':'border-radius-3 uk-textarea fYekan input','rows':'14','placeholder':'هر گونه انتقاد پیشنهاد یا درخواستی از ما دارید با ما در میان بگذارید'},),
             'email': forms.EmailInput(attrs={'class':'uk-input fYekan input border-radius-3','placeholder':''},),
 
         }
