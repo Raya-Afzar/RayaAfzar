@@ -372,10 +372,12 @@ $(document).ready(function(){
   var startY, endY;
 
   document.addEventListener('touchstart', function(event) {
+    event.preventDefault()
     startY = event.touches[0].clientY;
   });
   
   document.addEventListener('touchend', function(event) {
+    event.preventDefault()
     endY = event.changedTouches[0].clientY;
   
     if (startY > endY) {
@@ -393,7 +395,7 @@ $(document).ready(function(){
       rect.top >= 0 &&
       rect.left >= 0 &&
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      rect.right-1 <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }
 
