@@ -363,7 +363,47 @@
 
 </script>
 
-<script>docSlider.init();</script>
+<script>
+  
+  docSlider.init();
+$(document).ready(function(){
+ 
+
+  var startY, endY;
+
+  document.addEventListener('touchstart', function(event) {
+    startY = event.touches[0].clientY;
+  });
+  
+  document.addEventListener('touchend', function(event) {
+    endY = event.changedTouches[0].clientY;
+  
+    if (startY > endY) {
+      var element = $('#endofsection2')[0]; // Get the DOM element from jQuery object
+      if (isElementInViewport(element)) {
+        docSlider.jumpPage('thirdPage')
+      }
+    }
+  });
+  
+
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+
+
+});
+
+
+
+</script>
 
     </body>
   </html>

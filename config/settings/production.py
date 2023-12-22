@@ -1,7 +1,7 @@
 from .base import *
 import json
 
-with open('/home/server_user/django_env/config.json') as config_file:
+with open('/home/raya_afzar/django_env/config.json') as config_file:
     config = json.load(config_file)
 
 DEBUG = False
