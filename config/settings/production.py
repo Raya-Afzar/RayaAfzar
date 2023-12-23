@@ -7,13 +7,11 @@ with open('/home/raya_afzar/django_env/config.json') as config_file:
 DEBUG = False
 SECRET_KEY = config['SECRET_KEY']
 
-ALLOWED_HOSTS = ['*',]
-
 ALLOWED_HOSTS = [config['ALLOWED_HOST1'],config['ALLOWED_HOST2'],config['ALLOWED_HOST3']
                     ,config['ALLOWED_HOST4'],config['ALLOWED_HOST5']]
                     
 
-INSTALLED_APPS = INSTALLED_APPS + ['dbbackup',]                    
+INSTALLED_APPS = INSTALLED_APPS + ['dbbackup',]
 
 
 DATABASES = {
@@ -31,7 +29,7 @@ DATABASES = {
 
 #Backup
 DBBACKUP_STORAGE = 'django.core.files.storage.FileSystemStorage'
-DBBACKUP_STORAGE_OPTIONS = {'location': '/home/server_user/backup/'}
+DBBACKUP_STORAGE_OPTIONS = {'location': '/home/raya_afzar/backup/'}
 
 
 SECURE_HSTS_SECONDS = 259200
